@@ -28,7 +28,15 @@ El programa "B" se demora mas en tiempo en ejecución debido a que se debe abrir
 
 
 
-## [Pregunta 4](pregunta4.c)
+## [Pregunta 4](process-run.py)
+1. Run process-run.py with the following flags: -l 5:100,5:100. What should the CPU utilization be (e.g., the percent of time the CPU is in use?) Why do you know this? Use the -c and -p flags to see if you were right.
+
+El uso de la CPU se encuentra al 100%, dado que ninguno de los dos procesos ejecutados tienen redireccionamiento; por lo que la CPU nunca estará en espera. 
+
+
+2. Now run with these flags: ./process-run.py -l 4:100,1:0. These flags specify one process with 4 instructions (all to use the CPU), and one that simply issues an I/O and waits for it to be done. How long does it take to complete both processes? Use -c and -p to find out if you were right.
+
+En total se completara en 10 ticks, el primer proceso se hara en 4 ticks y el segundo en 1 ticks, pero se agregaran ticks vacios al final de cada uno; esto porque la longitud predeterminada es de 5 ticks. 
 
 
 
