@@ -24,7 +24,7 @@ El programa "B" se demora mas en tiempo en ejecución debido a que se debe abrir
 
 
 ## [Pregunta 3](pregunta3.c)
-
+En este programa se garantiza que el proceso hijo siempre espere que su padre termine la ejecucion para finalizarse a si mismo. Lo probe con los comandos que estan comentados "//" para escribir: Sistemas Operativos, donde Sistemas es la palabra del padre y Operativos es la palabra del hijo. 
 
 
 
