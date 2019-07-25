@@ -20,12 +20,22 @@ El programa "B" se demora mas en tiempo en ejecución debido a que se debe abrir
 
 ## [Pregunta 2](pregunta2.c)
 
+Este programa contiene 2 hilos y estos hilos ejecutan una operación matematica con variables privadas en cada uno de los hilos, el primer hilo se encarga de la operación de división y el segundo hilo se encarga de la multiplicación. Todo el programa se trabaja con variables tipo float. 
 
+Forma compilación:
+-> gcc pregunta2.c -o 2 -pthread
 
+Forma Ejecución:
+-> ./2
 
 ## [Pregunta 3](pregunta3.c)
 En este programa se garantiza que el proceso hijo siempre espere que su padre termine la ejecucion para finalizarse a si mismo. Lo probe con los comandos que estan comentados "//" para escribir: Sistemas Operativos, donde Sistemas es la palabra del padre y Operativos es la palabra del hijo. 
 
+Forma compilación:
+-> gcc pregunta3.c -o 3
+
+Forma Ejecución:
+-> ./3
 
 
 ## [Pregunta 4](process-run.py)
